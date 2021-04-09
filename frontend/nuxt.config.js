@@ -35,22 +35,12 @@ export default {
   ],
 
   modules: [
-    'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
-    '@nuxtjs/auth',
-    '@nuxtjs/device',
-    '@nuxtjs/moment'
+    '@nuxtjs/auth', 
   ],
 
   axios: {
     baseURL: process.env.API_URL
-  },
-
-  moment: {
-    timezone: true,
-    defaultTimezone: 'Asia/Jakarta',
-    defaultLocale: 'id',
-    locales: ['id']
   },
 
   auth: {   

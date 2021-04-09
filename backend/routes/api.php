@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::post("/broadcasting/auth",function(){
+	return true;
+});
+
 Route::get("/news","User\NewsController@index");
 Route::post("/signup","User\AuthController@signup");
 
@@ -23,3 +27,5 @@ Route::post("/logout","User\AuthController@logout");
 Route::get("/user","User\AuthController@me");
 
 Route::post("/upload","User\AuthController@upload");
+
+Route::post("/logs",'User\NewsController@logs');

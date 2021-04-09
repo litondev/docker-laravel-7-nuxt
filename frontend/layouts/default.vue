@@ -25,6 +25,9 @@
         v-if="$auth.loggedIn">
         Profil
       </NuxtLink>
+      <NuxtLink to="/logs">
+        Logs
+      </NuxtLink>
       
       <a @click="logout"
         v-if="$auth.loggedIn">
