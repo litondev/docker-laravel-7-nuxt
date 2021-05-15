@@ -1,4 +1,4 @@
-# testing
+# Nuxt
 
 ## Build Setup
 
